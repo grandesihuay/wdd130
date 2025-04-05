@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #c98331;
+  --secondary-color: #1F629A;
+  --accent1-color: #4E8AB0;
+  --accent2-color: #C7B494;
+}
+
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1,h2 {
+  color: var(--primary-color);
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer .socialinks a {
+  text-decoration: none;
+}
+
+footer .socialinks a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

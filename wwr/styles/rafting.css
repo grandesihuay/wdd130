@@ -3,6 +3,8 @@
   --secondary-color: #1F629A;
   --accent1-color: #4E8AB0;
   --accent2-color: #C7B494;
+  --heading-font: "Chewy", system-ui;
+  --body-font: "Patrick Hand", cursive;
 }
 
 .chewy-regular {
@@ -16,48 +18,130 @@
     font-style: normal;
   }
 
-h1,h2 {
+/* ---------------------------------------------*/
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
   color: var(--primary-color);
-  font-family: "Chewy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-top: 20px;
+/* -------------- Footer--------------------*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-p {
-  color: var(--secondary-color);
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-footer .socialinks a {
-  text-decoration: none;
-}
-
-footer .socialinks a img {
+footer .socialmedia img{
   width: 30px;
   height: 30px;
-  margin: 0 10px;
+}
+.socialmedia a {
+  text-decoration: none;
+  padding-left: 1rem;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* ---------------------------------*/
+
+.hero {
+  position: relative;
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+article {
+  position: absolute;
+  top: 10rem;
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+}
+
+/*-----------Adventures section--------- */
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  text-align: center;
+  padding: 1rem;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*-----------History section--------- */
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+
+.history img {
+  width: 200px;
+  height: auto;
+  justify-self: center;
 }

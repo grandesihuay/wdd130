@@ -198,8 +198,8 @@ article {
 }
 
 .message-banner {
-  background: linear-gradient(to right, #b3e5fc); 
-  padding: 2rem;
+  background: linear-gradient(to right, #b3e5fc,rgb(158, 244, 255)); 
+  padding: 1rem;
   text-align: center;
   margin: 2rem 0;
   
@@ -251,7 +251,7 @@ article {
 }
 
 .page-title {
-  background: linear-gradient(to right, #cceeff);
+  background: linear-gradient(to right, #cceeff, rgb(184, 242, 250));
   text-align: center;
   padding: 1rem;
   color: var(--secondary-color);

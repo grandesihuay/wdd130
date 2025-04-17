@@ -92,7 +92,7 @@ footer .socialmedia img{
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -248,4 +248,19 @@ article {
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+}
+
+.page-title {
+  background: linear-gradient(to right, #cceeff);
+  text-align: center;
+  padding: 1rem;
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  margin-top: 1rem;
+}
+
+.google-map {
+  border: none;
+  width: 100%;
+  height: 300px;
 }
